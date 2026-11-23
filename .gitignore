@@ -1,0 +1,88 @@
+# Backend Python
+backend/venv/
+backend/.venv/
+backend/env/
+backend/.env/
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.Python
+backend/build/
+backend/develop-eggs/
+backend/dist/
+backend/downloads/
+backend/eggs/
+backend/.eggs/
+backend/lib/
+backend/lib64/
+backend/parts/
+backend/sdist/
+backend/var/
+backend/wheels/
+backend/pip-wheel-metadata/
+backend/.pip-cache/
+backend/.pytest_cache/
+backend/.coverage
+backend/.cache
+backend/htmlcov/
+backend/*.pth
+backend/.env
+backend/instance/
+backend/.webassets-cache
+backend/.mypy_cache/
+backend/.pyre_configuration
+backend/.pytype/
+
+# Frontend Node
+frontend/node_modules/
+frontend/.DS_Store
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/.env.local
+frontend/.env.*.local
+frontend/.preview
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.log
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+
+# OS
+Thumbs.db
+.directory
+.DS_Store
+
+# Misc
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.sublime-project
+*.sublime-workspace
+
+# Training code artifacts
+training code/runs/
+training code/checkpoints/
+training code/__pycache__/
+training code/*.pth
+training code/*.h5
+training code/*.weights
+training code/logs/
+# Root Python virtual environment
+.venv/
+venv/

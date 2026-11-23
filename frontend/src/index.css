@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-medical-light-bg text-medical-text;
+  }
+
+  * {
+    @apply transition-all duration-200;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 102, 204, 0.05);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #0066cc, #00bcd4);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #0052a3, #0099c1);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-2.5 bg-gradient-to-r from-medical-accent to-medical-info text-white rounded-lg font-medium shadow-md hover:shadow-lg active:scale-95 flex items-center justify-center gap-2 hover:from-blue-700 hover:to-cyan-600 transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-2.5 bg-medical-accent-light hover:bg-blue-200 text-medical-accent border border-medical-accent rounded-lg font-medium shadow-sm active:scale-95 flex items-center justify-center gap-2 transition-all duration-300;
+  }
+
+  .btn-tertiary {
+    @apply px-4 py-2 bg-transparent hover:bg-medical-accent-light text-medical-accent border border-medical-accent rounded-lg font-medium transition-colors duration-200;
+  }
+
+  .card {
+    @apply bg-white border border-medical-gray rounded-xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300 hover:border-medical-accent;
+  }
+
+  .card-compact {
+    @apply bg-white border border-medical-gray rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2.5 bg-white border-2 border-medical-gray rounded-lg text-medical-text placeholder-gray-400 focus:outline-none focus:border-medical-accent focus:bg-medical-accent-light transition-all duration-300;
+  }
+
+  .label {
+    @apply block text-sm font-semibold text-medical-text mb-2;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold bg-gradient-to-r from-medical-accent to-medical-info bg-clip-text text-transparent mb-4;
+  }
+
+  .stat-box {
+    @apply bg-gradient-to-br from-medical-light-bg to-medical-accent-light border border-medical-gray rounded-lg p-4 hover:border-medical-accent hover:shadow-md transition-all duration-300 hover:scale-105;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 bg-medical-accent-light text-medical-accent text-xs font-semibold rounded-full;
+  }
+
+  .tooltip {
+    @apply relative;
+  }
+
+  .tooltip-text {
+    @apply invisible absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-medical-text text-white text-xs rounded whitespace-nowrap z-10 opacity-0 transition-opacity duration-300;
+  }
+
+  .tooltip:hover .tooltip-text {
+    @apply visible opacity-100;
+  }
+
+  .loading-pulse {
+    @apply animate-pulse-subtle;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-medical-accent to-medical-info bg-clip-text text-transparent;
+  }
+}
